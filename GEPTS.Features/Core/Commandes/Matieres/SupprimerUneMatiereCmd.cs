@@ -6,6 +6,6 @@ namespace GETPS.Features.Core.Commandes.Matieres
 {
     public class SupprimerUneMatiereCmd : BaseCommand<ReponseDeRequette>
     {
-        public Guid Id { get; set; }
+        public Guid MatiereId { get; set; }
     }
 }

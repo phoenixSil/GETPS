@@ -4,7 +4,7 @@ using MediatR;
 
 namespace GETPS.Features.Core.Commandes.Matieres
 {
-    public class LireTousLesMatieresCmd : BaseCommand<List<MatiereDto>>
+    public class LireToutesLesMatieresCmd : BaseCommand<List<MatiereDto>>
     {
 
     }

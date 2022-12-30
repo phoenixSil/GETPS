@@ -10,5 +10,6 @@ namespace GEPTS.Features.Contrats.Repertoire
     {
         IRepertoireDeMatiere RepertoireDeMatiere { get; }
         IRepertoireDeProgrammation RepertoireDeProgrammation { get; }
+        public Task Enregistrer();
     }
 }

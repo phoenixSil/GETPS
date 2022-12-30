@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <Folder Include="Contrats\Proxies\" />
+    <Folder Include="Core\Handlers\Programmations\" />
   </ItemGroup>
 
 </Project>
