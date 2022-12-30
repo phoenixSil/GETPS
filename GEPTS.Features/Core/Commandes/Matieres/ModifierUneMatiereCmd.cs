@@ -5,7 +5,7 @@ using GEPTS.Features.DTOs.Matieres;
 
 namespace GETPS.Features.Core.Commandes.Matieres
 {
-    public class ModifierUneMatiereCmd : BaseCommand 
+    public class ModifierUneMatiereCmd : BaseCommand<ReponseDeRequette>
     {
         public Guid MatiereId { get; set; }
         public MatiereAModifierDto MatiereAModifierDto { get; set; }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GETPS.Features.Core.BaseFactoryClass
 {
-    public abstract class BaseCommand : IRequest<ReponseDeRequette>
+    public abstract class BaseCommand<k> : IRequest<k>
     {
         public TypeDeRequette Operation { get; set; }
     }

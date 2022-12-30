@@ -11,8 +11,8 @@ using System.Threading.Tasks;
 
 namespace GETPS.Features.Core.BaseFactoryClass
 {
-    public abstract class BaseCommandHandler<T> : IRequestHandler<T, ReponseDeRequette>
-        where T : BaseCommand
+    public abstract class BaseCommandHandler<T, K> : IRequestHandler<T, K>
+        where T : BaseCommand<K>
     {
         protected readonly IPointDaccess _pointDaccess;
         protected readonly IMediator _mediator;
@@ -25,6 +25,6 @@ namespace GETPS.Features.Core.BaseFactoryClass
             _mapper = mapper;
         }
 
-        public abstract Task<ReponseDeRequette> Handle(T request, CancellationToken cancellationToken);
+        public abstract Task<K> Handle(T request, CancellationToken cancellationToken);
     }
 }

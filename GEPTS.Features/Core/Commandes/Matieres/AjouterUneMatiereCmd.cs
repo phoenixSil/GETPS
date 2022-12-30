@@ -4,7 +4,7 @@ using GEPTS.Features.DTOs.Matieres;
 
 namespace GETPS.Features.Core.Commandes.Matieres
 {
-    public class AjouterUneMatiereCmd : BaseCommand
+    public class AjouterUneMatiereCmd : BaseCommand<ReponseDeRequette>
     {
         public MatiereACreerDto MatiereAAjouterDto { get; set; }
     }

@@ -2,9 +2,9 @@
 using MsCommun.Reponses;
 using GETPS.Features.Core.BaseFactoryClass;
 
-namespace GETPS.Features.Core.Commandes.Matieres
+namespace GETPS.Features.Core.Commandes.Programmations
 {
-    public class SupprimerUneMatiereCmd : BaseCommand<ReponseDeRequette>
+    public class SupprimerUneProgrammationCmd : BaseCommand<ReponseDeRequette>
     {
         public Guid Id { get; set; }
     }
