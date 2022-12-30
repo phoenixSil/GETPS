@@ -1,4 +1,5 @@
-﻿using GETPS.Extensions;
+﻿using Gdc.Extensions;
+using GETPS.Extensions;
 using GETPS.Features;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,8 +15,8 @@ namespace Gdc.InjectionDeDependance
     {
         public static IServiceCollection AjoutDeToutesLesExtensions(this IServiceCollection services, IConfiguration configuration)
         {
-            // services.ConfigurePersistenceServices(configuration);
-            //services.ConfigureControllerServices();
+            services.ConfigurePersistenceServices(configuration);
+            services.ConfigureControllerServices();
             services.ConfigureApplicationServices();
 
             return services;
