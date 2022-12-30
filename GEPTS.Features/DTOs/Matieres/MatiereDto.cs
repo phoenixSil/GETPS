@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GEPTS.Features.DTOs.Matieres
 {
-    public class MatiereDto
+    public class MatiereDto : BaseDomainDto, IMatiereDto
     {
         public string CodeMatiere { get; set; }
         public string Designation { get; set; }

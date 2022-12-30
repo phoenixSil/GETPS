@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GEPTS.Features.DTOs.Programmations
 {
-    public class ProgrammationDto : BaseDomainDto, IProgrammationDto
+    public interface IProgrammationDto
     {
         public DateTime DateDeDebut { get; set; }
         public DateTime DateDeFin { get; set; }
