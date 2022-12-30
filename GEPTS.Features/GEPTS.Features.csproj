@@ -15,4 +15,8 @@
     <PackageReference Include="MsCommun" Version="1.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Contrats\Proxies\" />
+  </ItemGroup>
+
 </Project>
