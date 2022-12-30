@@ -10,5 +10,6 @@ namespace GEPTS.Features.Contrats.Repertoire
 {
     public interface IRepertoireDeMatiere : IRepertoireGenerique<Matiere>
     {
+        Task<Matiere> LireParNumeroExterne(Guid value);
     }
 }

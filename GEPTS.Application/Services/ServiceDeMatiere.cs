@@ -31,6 +31,11 @@ namespace GEPTS.Application.Services
             return response;
         }
 
+        public Task<MatiereDto> LireMatiereParNumeroExterne(Guid numeroExterne)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<List<MatiereDto>> LireToutesLesMatieres()
         {
             var response = await _mediator.Send(new LireToutesLesMatieresCmd { });
@@ -45,8 +50,8 @@ namespace GEPTS.Application.Services
 
         public async Task<ReponseDeRequette> SupprimerUneMatiere(Guid matiereId)
         {
-            var response = await _mediator.Send(new SupprimerUneMatiereCmd { MatiereId = matiereId });
-            return response;
+            var enseignant = await _mediator.Send(new SupprimerUneMatiereCmd { MatiereId = matiereId });
+            return enseignant;
         }
     }
 }

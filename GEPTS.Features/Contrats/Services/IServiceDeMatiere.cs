@@ -15,5 +15,6 @@ namespace GEPTS.Features.Contrats.Services
         public Task<ReponseDeRequette> SupprimerUneMatiere(Guid MatiereId);
         public Task<MatiereDetailDto> LireDetailDuneMatiere(Guid id);
         public Task<ReponseDeRequette> ModifierUneMatiere(Guid filiereId, MatiereAModifierDto filiereAModifierDto);
+        public Task<MatiereDto> LireMatiereParNumeroExterne(Guid numeroExterne);
     }
 }

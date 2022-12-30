@@ -18,5 +18,13 @@ namespace GEPTS.Datas.Repertoires
         {
             _context = context;
         }
+
+        public async Task<Matiere> LireParNumeroExterne(Guid numeroExterne)
+        {
+            var niveau = await _context.Matieres
+                    .SingleOrDefaultAsync(niv => niv.NumeroExterne == numeroExterne);
+
+            return niveau;
+        }
     }
 }
