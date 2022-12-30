@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GETPS.Api\GETPS.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

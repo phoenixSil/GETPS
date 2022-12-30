@@ -7,8 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GEPTS.Application\GEPTS.Application.csproj" />
-    <ProjectReference Include="..\GEPTS.Datas\GEPTS.Datas.csproj" />
     <ProjectReference Include="..\GEPTS.Features\GEPTS.Features.csproj" />
   </ItemGroup>
 
