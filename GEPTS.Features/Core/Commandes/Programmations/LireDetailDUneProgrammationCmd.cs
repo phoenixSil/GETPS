@@ -6,6 +6,6 @@ namespace GETPS.Features.Core.Commandes.Programmations
 {
     public class LireDetailDUneProgrammationCmd : BaseCommand<ProgrammationDetailDto>
     {
-        public Guid Id { get; set; }
+        public Guid ProgrammationId { get; set; }
     }
 }

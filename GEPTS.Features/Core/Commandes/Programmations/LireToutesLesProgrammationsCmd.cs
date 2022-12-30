@@ -4,7 +4,7 @@ using MediatR;
 
 namespace GETPS.Features.Core.Commandes.Programmations
 {
-    public class LireTousLesProgrammationsCmd : BaseCommand<List<ProgrammationDto>>
+    public class LireToutesLesProgrammationsCmd : BaseCommand<List<ProgrammationDto>>
     {
 
     }
