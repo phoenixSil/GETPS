@@ -12,11 +12,13 @@
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="MediatR" Version="11.1.0" />
     <PackageReference Include="MsCommun" Version="1.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Contrats\Proxies\" />
+    <Folder Include="Core\Commandes\Programmations\" />
   </ItemGroup>
 
 </Project>
